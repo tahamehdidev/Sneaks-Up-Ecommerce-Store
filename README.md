@@ -6,7 +6,7 @@ A full-stack e-commerce application that combines a Next.js storefront with an E
 
 ### User Roles & Access
 - **Customers** can register/login with JWT-based authentication and access protected resources via bearer tokens. Role-based checks are enforced in the backend middleware to gate protected endpoints (e.g., sales manager, product manager, support).
-- **Staff roles** include support, sales manager, and product manager; the server ensures default roles on startup for role-based access control and tooling access.【F:backend/src/server.js†L33-L45】【F:backend/src/server.js†L256-L290】
+- **Staff roles** include support, sales manager, and product manager; the server ensures default roles on startup for role-based access control and tooling access.
 
 ### Core Functionalities
 - **Product catalog** with search, sorting, category filtering, CRUD management, and image uploads (Multer to `/uploads`).
@@ -76,7 +76,7 @@ Frontend build, start, lint, and test scripts are available in `frontend/package
 - **Orders & Returns**: `/orders` create, `/orders/returns` for staff return workflows and approvals.
 - **Invoices**: `/invoice/:orderId` returns a PDF inline for download/viewing.
 - **Analytics**: `/analytics/summary?from=YYYY-MM-DD&to=YYYY-MM-DD` for sales reporting.
-- **Chat**: `/chat` API + Socket.IO events for support queue and messaging.【F:backend/src/routes/chat.js†L1-L200】【F:backend/src/server.js†L71-L249】
+- **Chat**: `/chat` API + Socket.IO events for support queue and messaging.
 
 ## Notes
 - Uploads for product images are served from `/uploads`, while chat attachments are stored in a private directory and accessed through secure endpoints.【F:backend/src/server.js†L23-L41】【F:backend/src/routes/chat.js†L73-L118】
