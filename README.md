@@ -79,5 +79,5 @@ Frontend build, start, lint, and test scripts are available in `frontend/package
 - **Chat**: `/chat` API + Socket.IO events for support queue and messaging.
 
 ## Notes
-- Uploads for product images are served from `/uploads`, while chat attachments are stored in a private directory and accessed through secure endpoints.【F:backend/src/server.js†L23-L41】【F:backend/src/routes/chat.js†L73-L118】
-- Email utilities are configured for demo use and can be wired to a production SMTP account by adjusting environment variables and routing logic.【F:backend/src/utils/email.js†L1-L106】
+- Uploads for product images are served from `/uploads`, while chat attachments are stored in a private directory and accessed through secure endpoints.
+- Email utilities are configured for demo use and can be wired to a production SMTP account by adjusting environment variables and routing logic.
